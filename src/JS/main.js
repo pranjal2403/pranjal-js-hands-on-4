@@ -1,8 +1,7 @@
-// Iterate Through an Array with a For Loop
-const myArr = [2, 3, 4, 5, 6];
-
-// Only change code below this line
-let total = 0;
-for (let i = 0; i < myArr.length; i++) {
-   total+= myArr[i];
-}
+// Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not Equal";
+  
+ }
+ 
+ checkEqual(1, 2);
