@@ -1,7 +1,10 @@
-// Use the Conditional (Ternary) Operator
-function checkEqual(a, b) {
-  return a === b ? "Equal" : "Not Equal";
-  
- }
- 
- checkEqual(1, 2);
+// Use Recursion to Create a Range of Numbers
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+};
